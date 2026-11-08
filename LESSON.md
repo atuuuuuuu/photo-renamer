@@ -1,7 +1,5 @@
 # Photo renamer: how it works, and how to build your own
 
-`photo_renamer.py` is a **reference demo written by Claude** for you to learn from. Don't put it on GitHub as your
-project. Build your own version (part 3), and put *that* on GitHub and in your README.
 
 ## Try it (safe: it only previews unless you add --apply)
 
