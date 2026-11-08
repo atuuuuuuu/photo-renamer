@@ -73,7 +73,7 @@ def read_tiff_date(t):
     for tag, n, value in entries(first_table):
         if tag == 0x0132:                       # DateTime: when the file was last changed (backup answer)
             found = text(n, value)
-        elif tag == 0x8769:                     # pointer to the EXIF table, which has the real date taken
+        elif tag == 0x8769:                     # pointer to the EXIF table, which has the real date take n
             exif_table = struct.unpack(order + "I", value)[0]
     if exif_table:
         for tag, n, value in entries(exif_table):
